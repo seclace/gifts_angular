@@ -1,0 +1,28 @@
+nav {
+    background-color: #6eeedc;
+}
+nav ul a {
+    position: relative;
+    color: rgba(72, 72, 72, 0.9);
+}
+nav ul a:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgba(0,200,175,.5);
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    -ms-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+}
+nav ul a:hover {
+    background-color: rgba(255,255,255,.3);
+}
+nav ul a:hover:after {
+    width: 100%;
+    left: 0;
+}

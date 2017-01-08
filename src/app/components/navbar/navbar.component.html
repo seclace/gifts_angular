@@ -1,0 +1,17 @@
+<nav>
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">GIFTS<span style="color: rgba(0,200,175,.5)">4</span>U</a>
+        <ul id="nav-mobile-authoized" class="right hide-on-med-and-down" *ngIf="userAuthorized">
+            <li><a href="/me">Моя страница</a></li>
+            <li><a href="/feed">Лента<span class="badge new">2</span></a></li>
+            <li><a href="/answers">Ответы<span class="badge new">5</span></a></li>
+            <li><a href="/friends">Мои друзья</a></li>
+            <li><a href="/settings">Настройки</a></li>
+            <li><a href="/logout">Выйти</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down" *ngIf="!userAuthorized">
+            <li><a href="/login">Войти</a></li>
+            <li><a href="/register">Зарегистрироваться</a></li>
+        </ul>
+    </div>
+</nav>

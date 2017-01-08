@@ -1,0 +1,43 @@
+.card {
+    -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -ms-transition: background 2s;
+    -o-transition: background 2s;
+    transition: background 2s;
+}
+.card.new {
+    background-color: rgba(38,166,154,.1);
+}
+.card.added {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+.card.removed {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.card .card-image {
+    min-height: 240px;
+}
+.card-action,
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-action a {
+    display: flex;
+    align-items: center;
+    margin-right: 0 !important;
+}
+.card .card-action a.checked:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #0b0;
+}
+.card .card-action a.checked:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: #7ad86e;
+}
+.card-action a .count {
+    padding-left: 10px;
+}
+/*
+span.badge.new {
+    background: #00bb00;
+}*/
